@@ -102,4 +102,20 @@ st.sidebar.header("about")
 st.sidebar.text("hi this is rohit")
 
 
+#num_input
+st.number_input("number of rows to view",5,10)
+st.dataframe(df.head(number))
+
+
+
+if st.checkbox("summary"):
+	st.write(df.describe().T)
+
+#username and password
+username = st.text_input("enter username")
+password = st.text_input("enter password",type="password")
+	
+	
+
+
 
